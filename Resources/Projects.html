@@ -1,4 +1,4 @@
-﻿<surround-begin class="Layout/_Layout.html" />
+﻿<surround-begin src="Layout/_Layout.html" />
 
 <header>
     <h1>Projects</h1>
@@ -10,7 +10,21 @@
 
 <h2>Tools & Frameworks</h2>
 
-<template class="Templates/_ProjectEntry.html">
+<template src="Templates/_ProjectEntry.html">
+    <@title>Html Generator</@title>
+    <@year>2020</@year>
+    <@main-link>https://github.com/JustoSenka/HtmlGenerator</@main-link>
+    <@subtitle>Reusable web components, html includes, templates for static webpages.</@subtitle>
+    <@links><a href="https://github.com/JustoSenka/HtmlGenerator">Github</a></@links>
+    <@description>
+        Html Generator is a standalone command line tool which adds additional features to html.
+        It can merge, include and otherwise postprocess html files.
+        It is a pure html script-less solution alternative to many web component frameworks.
+    </@description>
+    <@tags>Web Components, HTML Include, Reusable HTML Components</@tags>
+</template>
+
+<template src="Templates/_ProjectEntry.html">
     <@title>Mouse Robot</@title>
     <@year>2017 - 2019</@year>
     <@main-link>https://www.rotesting.com</@main-link>
@@ -21,22 +35,22 @@
         It can also be used to create automated bots for doing various menial tasks, playing browser games,
         launching builds, clicking on buttons or links. Its functionality is based on simulating mouse and keyboard input.
     </@description>
-    <@tags></@tags>
+    <@tags>Automation, Gui Testing, UI Automated Tests</@tags>
 </template>
 
 <h2>Games</h2>
 
-<template class="Templates/_ProjectEntry.html">
+<template src="Templates/_ProjectEntry.html">
     <@title>RTS Game</@title>
-    <@year>2015</@year>
+    <@year>2016</@year>
     <@main-link>https://github.com/JustoSenka/RTS-Game</@main-link>
-    <@subtitle>Real Time Strategy Warcraft-like Game created in Unity Engine.</@subtitle>
+    <@subtitle>Real Time Strategy Warcraft-like Game draft in Unity Engine.</@subtitle>
     <@links><a href="https://github.com/JustoSenka/RTS-Game">Github</a></@links>
-    <@description>Features top-down RTS controls, unit movement with animations, pathfinding, hero skills and particle systems, enemy AI.</@description>
+    <@description>Features top-down RTS controls, unit movement with animations, pathfinding, hero skills and particle systems, enemy AI. </@description>
     <@tags>3D, RPG Elements, Real Time Strategy, Top-Down</@tags>
 </template>
 
-<template class="Templates/_ProjectEntry.html">
+<template src="Templates/_ProjectEntry.html">
     <@title>Battle City</@title>
     <@year>2015</@year>
     <@main-link>https://github.com/JustoSenka/BattleCity</@main-link>
@@ -49,4 +63,41 @@
     <@tags>2D, Shooter, Multiplayer</@tags>
 </template>
 
-<surround-end class="Layout/_Layout.html" />
+<template src="Templates/_ProjectEntry.html">
+    <@title>GMan RPG Game</@title>
+    <@year>2012</@year>
+    <@main-link>https://github.com/JustoSenka/GMan-RPG-Game</@main-link>
+    <@subtitle>A Diablo-like 2.5D RPG game created with Borland C++ Builder 6.</@subtitle>
+    <@links><a href="https://github.com/JustoSenka/GMan-RPG-Game">Github</a></@links>
+    <@description>
+        Game with standard RPG mechanics, leveling, skill and magic systems, mobs with randomized loot, inventory and shops, bosses.
+        Also includes Map Creator where world map as well as mob and item databases can be created using simple and intuitive drag&drop mechanics.
+    </@description>
+    <@tags>2.5D, RPG Elements, Hach & Slash</@tags>
+</template>
+
+<template src="Templates/_ProjectEntry.html">
+    <@title>Quadcopter Simulator</@title>
+    <@year>2015</@year>
+    <@main-link>#</@main-link>
+    <@subtitle>Subtitle.</@subtitle>
+    <@links><a href="#">Github</a></@links>
+    <@description>
+        Description
+    </@description>
+    <@tags></@tags>
+</template>
+
+<template src="Templates/_ProjectEntry.html">
+    <@title>Andoid Apps</@title>
+    <@year>2014</@year>
+    <@main-link>#</@main-link>
+    <@subtitle>Subtitle.</@subtitle>
+    <@links><a href="#">Github</a></@links>
+    <@description>
+        Description
+    </@description>
+    <@tags></@tags>
+</template>
+
+<surround-end src="Layout/_Layout.html" />
