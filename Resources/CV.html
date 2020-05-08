@@ -10,65 +10,23 @@
         <section class="pb-3">
             <p class="font-italic">Last updated: May 2020</p>
             <p>
-                My name is <strong class="text-dark">Justas Glodenis</strong> <br>
-                I'm Currently located in <strong class="text-dark">Copenhagen, Denmark</strong>, soon will be in <strong class="text-dark">Vilnius, Lithuania</strong>
+                My name is <strong class="text-dark">Justas Glodenis</strong>. <br>
+
+                I'm Currently located in <strong class="text-dark">Copenhagen, Denmark</strong>, soon will be in <strong class="text-dark">Vilnius, Lithuania</strong>. <br>
+                Contact information: <a href="mailto:glodjus@gmail.com">glodjus@gmail.com</a> or <a href="https://www.linkedin.com/in/justas-glodenis-944972120/">LinkedIn</a>. <br>
+
+                I store my projects in <a href="https://www.linkedin.com/in/justas-glodenis-944972120/">Github</a>,
+                but they have a nicer printable layout here: <a href="Projects.html"><strong style="font-size: large">Projects</strong></a>.
             </p>
         </section>
 
+        <h2 class="pb-1">Skills</h2>
+        <include src="_Includes/CV_Skills.html" />
+
         <h2 class="pb-1">Job Experience</h2>
-        <h4>@ Unity Technologies</h4>
-        <hr>
+        <include src="_Includes/CV_Experience.html" />
 
-        <template src="Templates/_Experience.html">
-            <@title>Software Developer, Quality</@title>
-            <@date>Aug 2018 – Present : 1 yrs 10 mos</@date>
-            <@resp>
-                Creating and maintaining various internal tools, 
-                from continuous integration data visualization solutions.
-            </@resp>
-            <@skills>
-                <li>MySQL with MS Entity Framework</li>
-                <li>Socket networking programming and Rest APIs</li>
-                <li>Agile/Kanban</li>
-            </@skills>
-        </template>
-
-        <template src="Templates/_Experience.html">
-            <@title>Software Development Engineer in Test (SDET)</@title>
-            <@date>Jun 2016 – Aug 2018 : 2 yrs 3 mos</@date>
-            <@resp>
-                Work with the team in an Agile Environment (Team consists of Devs, UX, Designers, Testers, Project/Product managers)
-                Make sure everybody (Devs) on a team knows and does write tests.
-                Make sure everybody have the right tools to write tests and view test data.
-                Make sure everybody is aware of current quality status, current bugs and test status.
-                Write full 95-100% functional and decision test coverage on both unit tests, integration tests, performance tests, regression tests, etc. etc.
-            </@resp>
-            <@skills>
-                <li>Deep C# knowledge.</li>
-                <li>NUnit testing framework.</li>
-                <li>C++ knowledge in real life projects.</li>
-                <li>A bit of Python and Perl for small scripts solving miscellaneous problems</li>
-                <li>QA theory in general, visited many testing and test automation related conferences.</li>
-                <li>Agile/Scrum</li>
-            </@skills>
-        </template>
-
-        <template src="Templates/_Experience.html">
-            <@title>QA Tester at Unity Technologies</@title>
-            <@date>Nov 2015 – Jun 2016 : 8 mos</@date>
-            <@resp>
-                Communicate with customers, find and reproduce their issues.
-                Provide developers required info about bugs and other issues.
-            </@resp>
-            <@skills>
-                <li>C#, Unity Game Engine.</li>
-                <li>Fogbugz & Confluence</li>
-                <li>Communication skills between customers and developers.</li>
-                <li>Table tennis and football.</li>
-            </@skills>
-        </template>
     </main>
-
 </div>
 
 <surround-end src="Layout/_Layout.html" />
