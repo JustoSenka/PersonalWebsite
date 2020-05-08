@@ -11,4 +11,8 @@
     <None Remove="Publish\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Log.txt" />
+  </ItemGroup>
+
 </Project>

@@ -1,32 +1,41 @@
 ﻿<surround-begin src="Layout/_Layout.html" />
 
+<header>
+    <h1 class="text-primary">Curriculum Vitae</h1>
+</header>
+<main style="font-size: medium">
+    <section>
+        <p class="font-italic">Last updated: May 2020</p>
+        <p>
+            My name is <strong class="text-dark">Justas Glodenis</strong>. <br>
 
-<div class="container">
+            I'm Currently located in <strong class="text-dark">Copenhagen, Denmark</strong>, soon will be in <strong class="text-dark">Vilnius, Lithuania</strong>. <br>
+            Contact information: <a href="mailto:glodjus@gmail.com">glodjus@gmail.com</a> or <a href="https://www.linkedin.com/in/justas-glodenis-944972120/">LinkedIn</a>. <br>
 
-    <header>
-        <h1 class="text-primary">Curriculum Vitae</h1>
-    </header>
-    <main style="font-size: medium">
-        <section class="pb-3">
-            <p class="font-italic">Last updated: May 2020</p>
-            <p>
-                My name is <strong class="text-dark">Justas Glodenis</strong>. <br>
+            I store my projects in <a href="https://www.linkedin.com/in/justas-glodenis-944972120/">Github</a>,
+            but they have a nicer printable layout here: <a href="Projects.html"><strong style="font-size: large">Projects</strong></a>.
+        </p>
+    </section>
 
-                I'm Currently located in <strong class="text-dark">Copenhagen, Denmark</strong>, soon will be in <strong class="text-dark">Vilnius, Lithuania</strong>. <br>
-                Contact information: <a href="mailto:glodjus@gmail.com">glodjus@gmail.com</a> or <a href="https://www.linkedin.com/in/justas-glodenis-944972120/">LinkedIn</a>. <br>
+    <h2 class="pb-1 pt-2">Skills & Knowledge</h2>
+    <include src="_Includes/CV_Skills.html" />
 
-                I store my projects in <a href="https://www.linkedin.com/in/justas-glodenis-944972120/">Github</a>,
-                but they have a nicer printable layout here: <a href="Projects.html"><strong style="font-size: large">Projects</strong></a>.
-            </p>
-        </section>
+    <h2 class="pb-1 pt-1">Job Experience</h2>
+    <include src="_Includes/CV_Experience.html" />
 
-        <h2 class="pb-1">Skills</h2>
-        <include src="_Includes/CV_Skills.html" />
+    <section class="pt-1">
+        <h2 class="pb-1">Personal Traits</h2>
+        <p>
+            I'm an active person, I've always been practicing some kind of sport, used to play volleyball, now lifting weights and jogging.
+            I like working with photoshop and blender, designing games, although I never find enough time to complete and release one.
+            I was into music in my childhood, I can play Piano and Guitar.
+            I like learning languages, memorizing words is something how I keep my brain active, currently I'm learning Spanish.'
+            One of my hobbies is to go bushcrafting and camping. I camped in a forest for 4 days, with food and water, limited gear, no tent.
+            I plan to make a 100km multiple day survival hike soon&trade;.
+            I'm surprised you've reached this far, why don't you invite me for an interview then? :)
+        </p>
+    </section>
 
-        <h2 class="pb-1">Job Experience</h2>
-        <include src="_Includes/CV_Experience.html" />
-
-    </main>
-</div>
+</main>
 
 <surround-end src="Layout/_Layout.html" />
