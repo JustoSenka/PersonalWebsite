@@ -23,8 +23,64 @@
     </@description>
     <@lang>C#</@lang>
     <@tags>Web Components, HTML Include, Reusable HTML Components</@tags>
+    <@collapse-id>collapseOne</@collapse-id>
+    <@images-text>Images</@images-text>
 </template>
 
+<div class="modal" id="modal">
+    <span class="modal-close" id="modal-close">&times;</span>
+    <img class="modal-content" id="modal-content">
+    <div id="modal-caption"></div>
+</div>
+ 
+<div id="accordion">
+    <div id="collapseOne" class="collapse" data-parent="#accordion">
+        <div class="card card-body">
+            <div class="row">
+                <div class="col">
+                    <img class="img-thumbnail modal-img" src="https://raw.githubusercontent.com/JustoSenka/BattleCity/master/Screenshots/BattleCity1.png" alt="Example Text">
+                </div>
+
+                <div class="col">
+                    <img class="img-thumbnail modal-img" src="https://raw.githubusercontent.com/JustoSenka/BattleCity/master/Screenshots/BattleCity2.png" alt="Some other text">
+                </div>
+
+                <div class="col">
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/1TupwICDR58" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL WITH JQUERY-->
+<!--
+<a href="#" class="pop">
+    <img src="http://upload.wikimedia.org/wikipedia/commons/2/22/Turkish_Van_Cat.jpg" style="width: 400px; height: 264px;">
+</a>
+
+<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" data-dismiss="modal">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <img src="" class="imagepreview" style="width: 100%;">
+            </div>
+            <div class="modal-footer">
+                <div class="col-xs-12">
+                    <p class="text-left">1. line of description<br>2. line of description <br>3. line of description</p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+    -->
 <template src="Templates/_ProjectEntry.html">
     <@title>Mouse Robot</@title>
     <@year>2017 - 2019</@year>
