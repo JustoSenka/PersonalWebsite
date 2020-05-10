@@ -8,173 +8,196 @@
     </p>
 </header>
 
-<h2>Tools & Frameworks</h2>
+<include src="_Includes/ModalImage.html" />
 
-<template src="Templates/_ProjectEntry.html">
-    <@title>Html Generator</@title>
-    <@year>2020</@year>
-    <@main-link>https://github.com/JustoSenka/HtmlGenerator</@main-link>
-    <@subtitle>Reusable web components, html includes, templates for static webpages.</@subtitle>
-    <@links><a href="https://github.com/JustoSenka/HtmlGenerator">Github</a></@links>
-    <@description>
-        Html Generator is a standalone command line tool which adds additional features to html.
-        It can merge, include and otherwise postprocess html files.
-        It is a pure html script-less solution alternative to many web component frameworks.
-    </@description>
-    <@lang>C#</@lang>
-    <@tags>Web Components, HTML Include, Reusable HTML Components</@tags>
-    <@collapse-id>collapseOne</@collapse-id>
-    <@images-text>Images</@images-text>
-</template>
+<div id="accordion-id">
 
-<div class="modal" id="modal">
-    <span class="modal-close" id="modal-close">&times;</span>
-    <img class="modal-content" id="modal-content">
-    <div id="modal-caption"></div>
-</div>
- 
-<div id="accordion">
-    <div id="collapseOne" class="collapse" data-parent="#accordion">
-        <div class="card card-body">
-            <div class="row">
-                <div class="col">
-                    <img class="img-thumbnail modal-img" src="https://raw.githubusercontent.com/JustoSenka/BattleCity/master/Screenshots/BattleCity1.png" alt="Example Text">
-                </div>
+    <h2>Tools & Frameworks</h2>
 
-                <div class="col">
-                    <img class="img-thumbnail modal-img" src="https://raw.githubusercontent.com/JustoSenka/BattleCity/master/Screenshots/BattleCity2.png" alt="Some other text">
-                </div>
+    <template src="Templates/_ProjectEntry.html">
+        <@title>Html Generator</@title>
+        <@year>2020</@year>
+        <@main-link>https://github.com/JustoSenka/HtmlGenerator</@main-link>
+        <@subtitle>Reusable web components, html includes, templates for static webpages.</@subtitle>
+        <@links><a href="https://github.com/JustoSenka/HtmlGenerator">Github</a></@links>
+        <@description>
+            Html Generator is a standalone command line tool which adds additional features to html.
+            It can merge, include and otherwise postprocess html files.
+            It is a pure html script-less solution alternative to many web component frameworks.
+        </@description>
+        <@lang>C#</@lang>
+        <@tags>Web Components, HTML Include, Reusable HTML Components</@tags>
+        <@collapse-id></@collapse-id>
+        <@images-text></@images-text>
+    </template>
 
-                <div class="col">
-                    <div class="embed-responsive embed-responsive-4by3">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/1TupwICDR58" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
+    <template src="Templates/_ProjectEntry.html">
+        <@title>Mouse Robot</@title>
+        <@year>2017 - 2019</@year>
+        <@main-link>https://www.rotesting.com</@main-link>
+        <@subtitle>GUI Automated Testing Framework.</@subtitle>
+        <@links><a href="https://github.com/JustoSenka/MouseRobot">Github</a> | <a href="https://www.rotesting.com/">Official Webpage</a>.</@links>
+        <@description>
+            Mouse Robot is a desktop application for building automated UI tests.
+            It can also be used to create automated bots for doing various menial tasks, playing browser games,
+            launching builds, clicking on buttons or links. Its functionality is based on simulating mouse and keyboard input.
+        </@description>
+        <@lang>C#</@lang>
+        <@tags>Automation, Gui Testing, UI Automated Tests</@tags>
+        <@collapse-id>collapseMR</@collapse-id>
+        <@images-text>Show Screenshots</@images-text>
+    </template>
+
+    <template src="Templates/_ProjectVisuals.html">
+        <@collapse-id>collapseMR</@collapse-id>
+        <@cols>
+            <div class="col">
+                <img class="img-thumbnail modal-img" src="https://raw.githubusercontent.com/JustoSenka/MouseRobot/master/Resources/Screenshot_01.png">
+            </div>
+        </@cols>
+    </template>
+
+    <template src="Templates/_ProjectEntry.html">
+        <@title>8086 16-Bit Disassembler</@title>
+        <@year>2014</@year>
+        <@main-link>https://github.com/JustoSenka/8086-16-Bit-Disassembler</@main-link>
+        <@subtitle>8086 16-Bit Disassembler written in Assembly.</@subtitle>
+        <@links><a href="#">Github</a></@links>
+        <@description>
+            Disassembler for 16-Bit 8086 Intel CPU byte code while it itself was written in 16-Bit MASM/TASM assembler language.
+            Does not recognize all opcodes, supports MOV PUSH POP ADD INC SUB DEC CMP MUL DIV CALL RET JMP LOOP INT and most of Jumps.
+        </@description>
+        <@lang>Assembly</@lang>
+        <@tags>Intel 8086, 16-Bit, TASM, MASM</@tags>
+        <@collapse-id>collapseASM</@collapse-id>
+        <@images-text>Show Screenshots</@images-text>
+    </template>
+
+    <template src="Templates/_ProjectVisuals.html">
+        <@collapse-id>collapseASM</@collapse-id>
+        <@cols>
+            <div class="col-md">
+                <img class="img-thumbnail modal-img" src="https://raw.githubusercontent.com/JustoSenka/8086-16-Bit-Disassembler/master/pics/disasm2.png" alt="Left: Decompiled byte code, Right: original code">
+            </div>
+        </@cols>
+    </template>
+
+    <h2>Games</h2>
+
+    <template src="Templates/_ProjectEntry.html">
+        <@title>RTS Game</@title>
+        <@year>2016</@year>
+        <@main-link>https://github.com/JustoSenka/RTS-Game</@main-link>
+        <@subtitle>Real Time Strategy Warcraft-like Game draft in Unity Engine.</@subtitle>
+        <@links><a href="https://github.com/JustoSenka/RTS-Game">Github</a></@links>
+        <@description>Features top-down RTS controls, unit movement with animations, pathfinding, hero skills and particle systems, enemy AI. </@description>
+        <@lang>Unity C#</@lang>
+        <@tags>3D, RPG Elements, Real Time Strategy, Top-Down</@tags>
+        <@collapse-id>collapseRTS</@collapse-id>
+        <@images-text>Show Screenshots</@images-text>
+    </template>
+
+    <template src="Templates/_ProjectVisuals.html">
+        <@collapse-id>collapseRTS</@collapse-id>
+        <@cols>
+            <div class="col-md">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KXPBhgwZKCg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </@cols>
+    </template>
+
+
+    <template src="Templates/_ProjectEntry.html">
+        <@title>Battle City</@title>
+        <@year>2015</@year>
+        <@main-link>https://github.com/JustoSenka/BattleCity</@main-link>
+        <@subtitle>Battle City (NES) game recreated in Unity Engine 5.</@subtitle>
+        <@links><a href="https://github.com/JustoSenka/BattleCity">Github</a></@links>
+        <@description>
+            A complete copy of battle city game with identical mechanics, multiplayer, powerups and tileset.
+            Contains 5 starting maps, which are stored in easily editable .txt files.
+        </@description>
+        <@lang>Unity C#</@lang>
+        <@tags>2D, Shooter, Multiplayer</@tags>
+        <@collapse-id>collapseBATTLE</@collapse-id>
+        <@images-text>Show Screenshots</@images-text>
+    </template>
+
+    <template src="Templates/_ProjectVisuals.html">
+        <@collapse-id>collapseBATTLE</@collapse-id>
+        <@cols>
+            <div class="col-md">
+                <img class="img-thumbnail modal-img" src="https://raw.githubusercontent.com/JustoSenka/BattleCity/master/Screenshots/BattleCity1.png">
+            </div>
+            <div class="col-md">
+                <img class="img-thumbnail modal-img" src="https://raw.githubusercontent.com/JustoSenka/BattleCity/master/Screenshots/BattleCity2.png">
+            </div>
+            <div class="col-md">
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1TupwICDR58" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
+        </@cols>
+    </template>
 
-<!-- MODAL WITH JQUERY-->
-<!--
-<a href="#" class="pop">
-    <img src="http://upload.wikimedia.org/wikipedia/commons/2/22/Turkish_Van_Cat.jpg" style="width: 400px; height: 264px;">
-</a>
+    <template src="Templates/_ProjectEntry.html">
+        <@title>Quadcopter Simulator</@title>
+        <@year>2015</@year>
+        <@main-link>#</@main-link>
+        <@subtitle>Subtitle.</@subtitle>
+        <@links><a href="#">Github</a></@links>
+        <@description>
+            Description
+        </@description>
+        <@lang>Java</@lang>
+        <@tags></@tags>
+        <@collapse-id></@collapse-id>
+        <@images-text></@images-text>
+    </template>
 
-<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog" data-dismiss="modal">
-        <div class="modal-content">
-            <div class="modal-body">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <img src="" class="imagepreview" style="width: 100%;">
+    <template src="Templates/_ProjectEntry.html">
+        <@title>Andoid Apps</@title>
+        <@year>2014</@year>
+        <@main-link>#</@main-link>
+        <@subtitle>Subtitle.</@subtitle>
+        <@links><a href="#">Github</a></@links>
+        <@description>
+            Description
+        </@description>
+        <@lang>Java</@lang>
+        <@tags></@tags>
+        <@collapse-id></@collapse-id>
+        <@images-text></@images-text>
+    </template>
+
+    <template src="Templates/_ProjectEntry.html">
+        <@title>GMan RPG Game</@title>
+        <@year>2012</@year>
+        <@main-link>https://github.com/JustoSenka/GMan-RPG-Game</@main-link>
+        <@subtitle>A Diablo-like 2.5D RPG game created with Borland C++ Builder 6.</@subtitle>
+        <@links><a href="https://github.com/JustoSenka/GMan-RPG-Game">Github</a></@links>
+        <@description>
+            Game with standard RPG mechanics, leveling, skill and magic systems, mobs with randomized loot, inventory and shops, bosses.
+            Also includes Map Creator where world map as well as mob and item databases can be created using simple and intuitive drag&drop mechanics.
+        </@description>
+        <@lang>C++</@lang>
+        <@tags>2.5D, RPG Elements, Hach & Slash</@tags>
+        <@collapse-id>collapseGMAN</@collapse-id>
+        <@images-text>Show Screenshots</@images-text>
+    </template>
+
+    <template src="Templates/_ProjectVisuals.html">
+        <@collapse-id>collapseGMAN</@collapse-id>
+        <@cols>
+            <div class="col-md">
+                <img class="col img-thumbnail modal-img" src="https://raw.githubusercontent.com/JustoSenka/GMan-RPG-Game/master/Screenshots/Game.jpg" alt="The game itself. Player is in the middle a bit to the left with orange hair.">
             </div>
-            <div class="modal-footer">
-                <div class="col-xs-12">
-                    <p class="text-left">1. line of description<br>2. line of description <br>3. line of description</p>
-
-                </div>
-
+            <div class="col-md">
+                <img class="col img-thumbnail modal-img" src="https://raw.githubusercontent.com/JustoSenka/GMan-RPG-Game/master/Screenshots/MapCreator.jpg" alt="The man creator with item/unit database window open.">
             </div>
+        </@cols>
+    </template>
 
-
-        </div>
-    </div>
 </div>
-    -->
-<template src="Templates/_ProjectEntry.html">
-    <@title>Mouse Robot</@title>
-    <@year>2017 - 2019</@year>
-    <@main-link>https://www.rotesting.com</@main-link>
-    <@subtitle>GUI Automated Testing Framework.</@subtitle>
-    <@links><a href="https://github.com/JustoSenka/MouseRobot">Github</a> | <a href="https://www.rotesting.com/">Official Webpage</a>.</@links>
-    <@description>
-        Mouse Robot is a desktop application for building automated UI tests.
-        It can also be used to create automated bots for doing various menial tasks, playing browser games,
-        launching builds, clicking on buttons or links. Its functionality is based on simulating mouse and keyboard input.
-    </@description>
-    <@lang>C#</@lang>
-    <@tags>Automation, Gui Testing, UI Automated Tests</@tags>
-</template>
-
-<template src="Templates/_ProjectEntry.html">
-    <@title>8086 16-Bit Disassembler</@title>
-    <@year>2014</@year>
-    <@main-link>https://github.com/JustoSenka/8086-16-Bit-Disassembler</@main-link>
-    <@subtitle>8086 16-Bit Disassembler written in Assembly.</@subtitle>
-    <@links><a href="#">Github</a></@links>
-    <@description>
-        Disassembler for 16-Bit 8086 Intel CPU byte code while it itself was written in 16-Bit MASM/TASM assembler language.
-        Does not recognize all opcodes, supports MOV PUSH POP ADD INC SUB DEC CMP MUL DIV CALL RET JMP LOOP INT and most of Jumps.
-    </@description>
-    <@lang>Assembly</@lang>
-    <@tags>Intel 8086, 16-Bit, TASM, MASM</@tags>
-</template>
-
-<h2>Games</h2>
-
-<template src="Templates/_ProjectEntry.html">
-    <@title>RTS Game</@title>
-    <@year>2016</@year>
-    <@main-link>https://github.com/JustoSenka/RTS-Game</@main-link>
-    <@subtitle>Real Time Strategy Warcraft-like Game draft in Unity Engine.</@subtitle>
-    <@links><a href="https://github.com/JustoSenka/RTS-Game">Github</a></@links>
-    <@description>Features top-down RTS controls, unit movement with animations, pathfinding, hero skills and particle systems, enemy AI. </@description>
-    <@lang>Unity C#</@lang>
-    <@tags>3D, RPG Elements, Real Time Strategy, Top-Down</@tags>
-</template>
-
-<template src="Templates/_ProjectEntry.html">
-    <@title>Battle City</@title>
-    <@year>2015</@year>
-    <@main-link>https://github.com/JustoSenka/BattleCity</@main-link>
-    <@subtitle>Battle City (NES) game recreated in Unity Engine 5.</@subtitle>
-    <@links><a href="https://github.com/JustoSenka/BattleCity">Github</a></@links>
-    <@description>
-        A complete copy of battle city game with identical mechanics, multiplayer, powerups and tileset.
-        Contains 5 starting maps, which are stored in easily editable .txt files.
-    </@description>
-    <@lang>Unity C#</@lang>
-    <@tags>2D, Shooter, Multiplayer</@tags>
-</template>
-
-<template src="Templates/_ProjectEntry.html">
-    <@title>Quadcopter Simulator</@title>
-    <@year>2015</@year>
-    <@main-link>#</@main-link>
-    <@subtitle>Subtitle.</@subtitle>
-    <@links><a href="#">Github</a></@links>
-    <@description>
-        Description
-    </@description>
-    <@lang>Java</@lang>
-    <@tags></@tags>
-</template>
-
-<template src="Templates/_ProjectEntry.html">
-    <@title>Andoid Apps</@title>
-    <@year>2014</@year>
-    <@main-link>#</@main-link>
-    <@subtitle>Subtitle.</@subtitle>
-    <@links><a href="#">Github</a></@links>
-    <@description>
-        Description
-    </@description>
-    <@lang>Java</@lang>
-    <@tags></@tags>
-</template>
-
-<template src="Templates/_ProjectEntry.html">
-    <@title>GMan RPG Game</@title>
-    <@year>2012</@year>
-    <@main-link>https://github.com/JustoSenka/GMan-RPG-Game</@main-link>
-    <@subtitle>A Diablo-like 2.5D RPG game created with Borland C++ Builder 6.</@subtitle>
-    <@links><a href="https://github.com/JustoSenka/GMan-RPG-Game">Github</a></@links>
-    <@description>
-        Game with standard RPG mechanics, leveling, skill and magic systems, mobs with randomized loot, inventory and shops, bosses.
-        Also includes Map Creator where world map as well as mob and item databases can be created using simple and intuitive drag&drop mechanics.
-    </@description>
-    <@lang>C++</@lang>
-    <@tags>2.5D, RPG Elements, Hach & Slash</@tags>
-</template>
 
 <surround-end src="Layout/_Layout.html" />

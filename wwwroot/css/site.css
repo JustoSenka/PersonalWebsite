@@ -2,57 +2,60 @@
 for details on configuring this project to bundle and minify static web assets. */
 
 a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
 }
 
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
+
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 .border-top {
-  border-top: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
 }
+
 .border-bottom {
-  border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
 
 button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
+    font-size: 1rem;
+    line-height: inherit;
 }
 
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-}
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+} 
+
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  line-height: 60px; /* Vertically center the text there */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    line-height: 60px; /* Vertically center the text there */
 }
 
 
@@ -65,7 +68,7 @@ body {
     transition: 0.3s;
 }
 
-.myImg:hover {
+    .modal-img:hover {
         opacity: 0.7;
     }
 
@@ -89,15 +92,15 @@ body {
     margin: auto;
     display: block;
     width: 80%;
-    max-width: 700px;
+    max-width: 1200px;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
-#caption {
+.modal-caption {
     margin: auto;
     display: block;
     width: 80%;
-    max-width: 700px;
+    max-width: 1200px;
     text-align: center;
     color: #ccc;
     padding: 10px 0;
@@ -105,7 +108,7 @@ body {
 }
 
 /* Add Animation - Zoom in the Modal */
-.modal-content, #caption {
+.modal-content, .modal-caption {
     animation-name: zoom;
     animation-duration: 0.6s;
 }
@@ -131,8 +134,8 @@ body {
     transition: 0.3s;
 }
 
-    .close:hover,
-    .close:focus {
+    .modal-close:hover,
+    .modal-close:focus {
         color: #bbb;
         text-decoration: none;
         cursor: pointer;

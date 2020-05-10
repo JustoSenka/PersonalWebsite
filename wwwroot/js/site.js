@@ -21,3 +21,4 @@ $(function () {
         modalCaption.innerHTML = this.alt;
     });
 });
+
