@@ -15,6 +15,65 @@
     <h2>Tools & Frameworks</h2>
 
     <template src="Templates/_ProjectEntry.html">
+        <@title>Realtime Terrain Generation</@title>
+        <@year>2021</@year>
+        <@main-link>https://github.com/JustoSenka/HtmlGenerator</@main-link>
+        <@subtitle>
+            Editor extension for Unity game engine for terrain generation.
+        </@subtitle>
+        <@links></@links>
+        <@description>
+            Terrain can be generated in both editmode and in game time fully asynchronously using C# threads or untiy job system.
+            Terrain height map is based on perlin, water and mountain areas as well.
+            Supports generating texture and normal maps which are selected based on height and slope.
+            There is a dynamic resolution feature, where zooming in would regenerate parts of terrain to increase resolution and detail,
+            zooming out will decrease terrain resolution automatically.
+            <br>
+            No github link since the project might be put on the market.
+        </@description>
+        <@lang>Unity C#</@lang>
+        <@tags>3D, Procedural Terrain, Perlin Noise</@tags>
+        <@collapse-id>collapseRTG</@collapse-id>
+        <@images-text>Show Screenshots</@images-text>
+    </template>
+
+    <template src="Templates/_ProjectVisuals.html">
+        <@collapse-id>collapseRTG</@collapse-id>
+        <@cols>
+            <div class="row">
+                <div class="col">
+                    <img class="img-thumbnail modal-img" src="Images/Terrain1.png">
+                </div>
+                <div class="col">
+                    <img class="img-thumbnail modal-img" src="Images/Terrain2.jpg">
+                </div>
+                <div class="col">
+                    <img class="img-thumbnail modal-img" src="Images/Terrain3.jpg">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img class="img-thumbnail modal-img" src="Images/Terrain4.jpg">
+                </div>
+                <div class="col">
+                    <img class="img-thumbnail modal-img" src="Images/Terrain5.jpg">
+                </div>
+                <div class="col">
+                    <img class="img-thumbnail modal-img" src="Images/Terrain6.png">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img class="img-thumbnail modal-img" src="Images/Terrain7_gif.gif">
+                </div>
+                <div class="col">
+                    <img class="img-thumbnail modal-img" src="Images/Terrain8_gif.gif">
+                </div>
+            </div>
+        </@cols>
+    </template>
+
+    <template src="Templates/_ProjectEntry.html">
         <@title>Html Generator</@title>
         <@year>2020</@year>
         <@main-link>https://github.com/JustoSenka/HtmlGenerator</@main-link>
@@ -194,7 +253,7 @@
             Also includes Map Creator where world map as well as mob and item databases can be created using simple and intuitive drag&drop mechanics.
         </@description>
         <@lang>C++</@lang>
-        <@tags>2.5D, RPG Elements, Hach & Slash</@tags>
+        <@tags>2.5D, RPG Elements, Hack & Slash</@tags>
         <@collapse-id>collapseGMAN</@collapse-id>
         <@images-text>Show Screenshots</@images-text>
     </template>

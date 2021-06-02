@@ -33,6 +33,12 @@ if "%1" == "js" (
 	goto sendfiles
 )
 
+if "%1" == "html" (
+	set source=.\publish\*.html
+	set dest=publish\
+	goto sendfiles
+)
+
 if "%1" == "clean" (
 	set dest=publish\*
 	goto clean
@@ -59,9 +65,10 @@ goto exit
 :end
 echo 1. all		to send full publish folder
 echo 2. wwwroot	to send only wwwroot
-echo 3. css		to send only compiled and json files in publish folder
-echo 4. js	to send only compiled and json files in publish folder
-echo 5. clean	deletes everything in the destination
+echo 3. css		to send only compiled and cssfiles in publish folder
+echo 4. js		to send only compiled and json files in publish folder
+echo 5. html		to send only html files
+echo 6. clean	deletes everything in the destination
 goto exit
 
 :exit
