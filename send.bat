@@ -39,11 +39,16 @@ if "%1" == "html" (
 	goto sendfiles
 )
 
+if "%1" == "file" (
+	set source=.\publish\%2
+	set dest=publish\%2
+	goto sendfiles
+)
+
 if "%1" == "clean" (
 	set dest=publish\*
 	goto clean
 )
-
 
 :: -m will create dir if not exist
 :: -r recursive
@@ -68,7 +73,8 @@ echo 2. wwwroot	to send only wwwroot
 echo 3. css		to send only compiled and cssfiles in publish folder
 echo 4. js		to send only compiled and json files in publish folder
 echo 5. html		to send only html files
-echo 6. clean	deletes everything in the destination
+echo 6. file		to send specific file, must be followed by a path
+echo 7. clean	deletes everything in the destination
 goto exit
 
 :exit
